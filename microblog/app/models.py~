@@ -59,8 +59,6 @@ class Profile:
 
     def __repr__(self):
         return "Profile(\'%s\', \'%s\')" % (self.name, self.gender)
-
-
 #Привязка к БД
 mapper(User, metadata.tables['login_password'])
 mapper(Post, metadata.tables['posts'])
